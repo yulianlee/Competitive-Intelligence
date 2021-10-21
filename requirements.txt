@@ -2,7 +2,7 @@ alabaster==0.7.10
 
 astroid==1.5.3
 astropy==2.0.2
-babel==2.5.0
+babel==2.9.1
 backports.shutil-get-terminal-size==1.0.0
 
 bitarray==0.8.1
