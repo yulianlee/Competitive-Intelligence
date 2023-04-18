@@ -1,0 +1,26 @@
+{
+  "name": "simple-button2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b./Simple_Button/app.js)",
+  "scripts": {
+    "start": "node ./Simple_Button/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeyinghern/comp_intel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeyinghern/comp_intel/issues"
+  },
+  "homepage": "https://github.com/leeyinghern/comp_intel#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.4.1"
+  },
+  "scripts":{
+    "start": "node ./Simple_Button/app.js"
+  }
+}

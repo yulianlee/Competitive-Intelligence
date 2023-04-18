@@ -1,0 +1,245 @@
+<style>
+  .underline{
+    text-decoration: underline;
+    color:black;
+  }
+
+  .divider{
+    border: 2px solid black;
+  }
+  .navbar{
+    font-size: 1.15em;
+    font-family: "Poppins",sans-serif; !important;
+    background-color:#777777;
+    opacity:1;
+  }
+  .navbar :hover{
+    color:red;
+  }
+  .nav-link {
+      color: white;
+  }
+  .companydetails{
+    margin-top: 5%;
+
+  }
+  .companytable1{
+    margin-left: 10%;
+  }
+  .companytable2{
+    margin-left: 10%;
+  }
+  .input-group{
+    margin-left:5%;
+  }
+  .agencytable{
+    margin-left: 5%;
+    margin-top:5%;
+  }
+  .databasesearch{
+    margin-left:2%;
+  }
+  #input-group-data{
+    margin-left:1%;
+  }
+  #company1name{
+    border:0.1rem solid;
+    text-align: center;
+  }
+  #company2name{
+    border:0.1rem solid;
+    text-align: center;
+  }
+
+  #company1_bid{
+    text-align: center;
+
+  }
+  #company1_wins{
+    text-align: center;
+  }
+  #company1_winrate{
+    text-align: center;
+  }
+  #company1_totalbid{
+    text-align: center;
+  }
+  #company1_valwon{
+    text-align: center;
+  }
+  #company1_bidrange{
+    text-align: center;
+  }
+  #company2_bid{
+    text-align: center;
+  }
+  #company2_wins{
+    text-align: center;
+  }
+  #company2_winrate{
+    text-align: center;
+  }
+  #company2_totalbid{
+    text-align: center;
+  }
+  #company2_valwon{
+    text-align: center;
+  }
+  #company2_bidrange{
+    text-align: center;
+  }
+
+  #titlexplain{
+    padding:2rem;
+    border-radius: 1.5rem 2.5rem;
+  }
+  #row{
+    text-align: center;
+  }
+  #project_search{
+    border:0.1rem solid;
+    border-radius: 1.5rem 2.5rem;
+    padding:2rem;
+    margin-top:1%;
+    margin-left:5%;
+  }
+  #similar_projects{
+    margin-left:5%;
+    /* margin-top:15%;
+    position:absolute;
+    top:20rem; */
+  }
+  #title_details{
+    margin-left:3%;
+  }
+
+  #titlexplainhead{
+    background-color:#777777;
+  }
+  #tableheadwords{
+    font-size:1.5rem;
+    color:red;
+    text-decoration: underline;
+  }
+  #companyinputs{
+    margin-top:3%;
+    margin-left:5%;
+  }
+  #titlehowtouse{
+    border: 0.1rem solid;
+    border-radius: 2rem;
+    padding:1rem;
+  }
+  #companies_desc{
+    margin-left: 10%;
+    border: 0.1rem solid black;
+    border-radius: 3rem;
+    padding:3rem;
+  }
+  #fig01{
+    border:0.2rem solid #042f4b;
+    border-radius: 1.5rem 2.5rem;
+    height:55%;
+    /* padding:5%;
+     */
+  }
+  #fig03{
+    border:0.2rem solid #042f4b;
+    border-radius: 1.5rem 2.5rem;
+    height:55%;
+    /* padding:5%; */
+  }
+
+  #AgencyPlot{
+    border:0.2rem solid #042f4b;
+    border-radius: 1.5rem 2.5rem;
+    height:35rem;
+    padding:5%;
+  }
+  #AgencyPiePlot{
+    border:0.2rem solid #042f4b;
+    border-radius: 1.5rem 2.5rem;
+    height:35rem;
+    padding:5%;
+  }
+  #top3bynum{
+    margin-top:3%;
+    height:10rem;
+  }
+  #top3byval{
+    margin-top: 3%;
+    height:10rem;
+  }
+  #proj_search{
+    margin-left: 2%;
+  }
+  #agencygraphs{
+    margin:2%;
+  }
+  #agencyresp{
+    margin-top:3%;
+  }
+  #input-group-bulk{
+    margin-left:3%;
+    margin-top:3%;
+  }
+  /* #background{
+    background-image: url("image1.jpg");
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    top:0;
+    bottom:0;
+    height:100vh;
+    z-index: -10;
+  } */
+  #introw_0{
+    margin-top:1%;
+    margin-left:3%;
+    margin-right:3%;
+  }
+  #introw0{
+    margin-left:3%;
+    margin-right:3%;
+  }
+  #introw_1{
+    margin:3%;
+  }
+  #value_proj{
+    border: 0.1rem solid;
+    border-radius: 2rem;
+    padding:1rem;
+  }
+  #introsearch{
+    margin-bottom:3%;
+  }
+  #additional_company_plots{
+    margin-top:7%;
+  }
+  #fg1{
+    font-size:4rem;
+    color: #e15249;
+    font-family:"Livvic"
+  }
+  #fg2{
+    font-size:4rem;
+    color:#e15249;
+    font-family:"Livvic"
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    background-color:##555555;
+    font-size: 1.15em;
+    line-height: 3em;
+    font-weight: 600;
+    height:100%;
+    width100%;
+  }
+  @media only screen and (max-width: 600px){
+    body{
+    font-size: 0.75em;
+    }
+  }
+
+
+</style>

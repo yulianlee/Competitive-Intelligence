@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="index.js"></script>
+	<script src="thirdparty/jquery.min.js"></script>
+	<script src="thirdparty/pace.min.js"></script>
+	<link rel= "stylesheet" href = "pace-master\themes\orange\pace-theme-loading-bar.css">
+	<meta charset="utf-8">
+	<title>Competitive Analysis Tool</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="external-css.css">
+	<script src="https://use.fontawesome.com/2327f1ec26.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="">
+	<script src="index.js"></script>
+	<script type = "text/javascript">
+		window.onload = function(){
+			var mylist = ['services professional services', 'facilities management security equipment & supplies', 'event organising food & beverages event organising', 'facilities management cleaning services', 'it&telecommunication it services & software development', 'event organising food & beverages catering services', 'it&telecommunication telecommunication devices', 'services advertising services', 'construction signages', 'dental medical & laboratory others', 'facilities management building m&e maintenance', 'facilities management management services', 'furniture office equipment & audio-visual furniture', 'construction general building & minor construction works', 'administration & training survey services', 'it&telecommunication others', 'construction civil engineering', 'facilities management pest management services', 'it&telecommunication servers', 'it&telecommunication softwares & licences', 'procurement category', 'miscellaneous disposal management', 'furniture office equipment & audio-visual office equipment', 'miscellaneous safety & rescue equipment', 'administration & training printing services', 'furniture office equipment & audio-visual others', 'construction renovation supplies & services', 'facilities management fire fighting equipment & maintenance', 'transportation bus hire', 'administration & training gifts & souvenirs', 'construction soil investigation & stabilization', 'administration & training courses', 'it&telecommunication desktop computers', 'miscellaneous others', 'event organising food & beverages outdoor event facilities', 'facilities management cleaning equipment & supplies', 'administration & training publications & periodicals', 'services tailoring', 'administration & training sports & recreational equipment', 'transportation ticketing travel services tours & excursions', 'transportation shipbuilding marine supplies & services', 'services public relations & counselling', 'construction others', 'furniture office equipment & audio-visual av equipment photographic equipment & accessories', 'administration & training educational supplies', 'event organising food & beverages meeting venues & facilities', 'facilities management security services', 'services storage services', 'it&telecommunication storage devices & drives', 'services data entry supply of manpower services', 'administration & training office supplies & stationery', 'transportation other vehicle rental', 'it&telecommunication printers & scanners', 'administration & training medals & trophies', 'facilities management horticulture works', 'workshop equipment and services workshop tools diy tools & accessories', 'transportation moving services', 'administration & training art supplies', 'dental medical & laboratory laboratory equipment & supplies', 'construction fencing & ironworks', 'others others', 'it&telecommunication computer accessories', 'construction asphalt works & road marking', 'transportation others', 'transportation vehicle maintenance', 'event organising food & beverages pantry supplies', 'dental medical & laboratory equipment testing & calibration services', 'services disposal and management of waste chemicals', 'it&telecommunication notebooks', 'construction interior decoration', 'transportation car rental', 'construction concrete products & repairs', 'furniture office equipment & audio-visual containers & storage equipment', 'services laundry services', 'workshop equipment and services workshop machinery diy machinery & supplies', 'administration & training photographic & imaging services', 'workshop equipment and services workshop furniture', 'furniture office equipment & audio-visual electrical appliances & supplies', 'administration & training postage & courier', 'administration & training music & video', 'construction pipe or cable laying & road reinstatement', 'construction repairs & redecoration', 'administration & training toners & cartridges', 'administration & training paper', 'administration & training ’ gifts & souvenirs', 'administration & training ’ courses', 'administration & training ’ printing services', 'event organising food & beverages accommodation', 'services childcare services', 'transportation ’ moving services', 'furniture office equipment & audio-visual copiers', 'it&telecommunication personal digital assistants', 'event organising food & beverages restaurants', 'services grooming services', 'it&telecommunication ’ it services & software development', 'workshop equipment and services ’ workshop tools maintenance', 'construction demolition', 'transportation petroleum oil & lubricants', 'services ’ professional services', 'construction piling', 'workshop equipment and services workshop tools maintenance'];
+			for (var i=0; i<mylist.length; i++){
+				$('#category_drop').append('<option>'+mylist[i]+'</option>')
+			};
+		}
+	</script>
+</head>
+<body >
+	<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand nav-link" href="index.html">
+				<img src="steng.png" width="180rem" height="40rem" alt="">
+			</a>
+			<div class = "container">
+<!-- 				<div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href= "index.html"> Title Search </a>
+					</li>
+				</div> -->
+				<div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="Companies.html"> Company Search </a>
+					</li>
+				</div>
+				<div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="Agencies.html"> Agency Search </a>
+					</li>
+				</div>
+        <div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="SQLSearch.html"> Database Search </a>
+					</li>
+				</div>
+        <div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="bulktenders.html"> Bulk Tender Search </a>
+					</li>
+				</div>
+				</div>
+		</nav>
+
+		<div class = 'row' id = 'introw_0'>
+			<div class = "col-6">
+				<h4 style = 'margin-left:6%; margin-top:3%;'><strong>Enter Procurement Category Here:</strong></h4>
+				<div class= 'input-group' id ='introsearch'>
+					<!-- Company 1: <input type="text" list="companies" id = "company_value" class="input-group-text ml-3 mr-2"/> -->
+
+					<input type="text" list="category_drop" class="input-group-text ml-3 mr-2 w-75" id = "categoryselect"/>
+					<datalist id="category_drop">
+					</datalist><span class="input-group-btn"><button type="button" class="btn btn-dark btn-lg" onclick="setintropage(); introplot1()"><i class="fa fa-search"></i></button></span>
+				</div>
+				<div id = 'value_proj' style='background-color:white'>
+					<table class = "toptable1" cellpadding=3rem>
+						<th id = "top1name" colspan="2"><h4><strong style='color:Navy; text-decoration:underline'>Most Valuable Project</strong></h4></th>
+						<tr><td id = "companydetailcell2">Amount</td><td id = "topval1">&nbsp;</td></tr>
+						<tr><td id = "companydetailcell2">Agency</td><td id = "topagency1">&nbsp;</td></tr>
+						<tr><td id = "companydetailcell2">Awarded To</td><td id = "awardedto1">&nbsp;</td></tr>
+						<!-- <tr><td id = "companydetailcell2">Awarded Date</td><td id = "awarded1">&nbsp;</td></tr> -->
+						<tr><td id = "companydetailcell2">Category</td><td id = "pcat1">&nbsp;</td></tr>
+						<!-- <tr><td id = "companydetailcell2">Procurement Method</td><td id = "pmethod1">&nbsp;</td></tr> -->
+						<!-- <tr><td id = "companydetailcell2">Procurement Type</td><td id = "ptype1">&nbsp;</td></tr> -->
+						<tr><td id = "companydetailcell2">Project ID</td><td id = "id1">&nbsp;</td></tr>
+						<!-- <tr><td id = "companydetailcell2">Project Title</td><td id = "title1">&nbsp;</td></tr> -->
+					</table>
+				</div>
+			</div>
+			<div class="col-6">
+				<object id="introplot" data='' type="image/svg+xml" height="500" width="700">
+					test
+				</object>
+			</div>
+		</div>
+		<div class ='row' id = 'introw0'>
+			<div class = "col-6">
+				<div id = 'value_proj' style='background-color:white'>
+				<table class = "toptable2" cellpadding=3rem>
+					<th id = "top2name" colspan="2"><h4><strong style='color:Navy; text-decoration:underline'>Second Highest Project</strong></h4></th>
+					<tr><td id = "companydetailcell2">Amount</td><td id = "topval2">&nbsp;</td></tr>
+					<tr><td id = "companydetailcell2">Agency</td><td id = "topagency2">&nbsp;</td></tr>
+					<tr><td id = "companydetailcell2">Awarded To</td><td id = "awardedto2">&nbsp;</td></tr>
+					<!-- <tr><td id = "companydetailcell2">Awarded Date</td><td id = "awarded2">&nbsp;</td></tr> -->
+					<tr><td id = "companydetailcell2">Category</td><td id = "pcat2">&nbsp;</td></tr>
+					<!-- <tr><td id = "companydetailcell2">Procurement Method</td><td id = "pmethod2">&nbsp;</td></tr>
+					<tr><td id = "companydetailcell2">Procurement Type</td><td id = "ptype2">&nbsp;</td></tr> -->
+					<tr><td id = "companydetailcell2">Project ID</td><td id = "id2">&nbsp;</td></tr>
+					<!-- <tr><td id = "companydetailcell2">Project Title</td><td id = "title2">&nbsp;</td></tr> -->
+				</table>
+			</div>
+			</div>
+			<div class = 'col-6'>
+				<div id = 'value_proj' style='background-color:white'>
+				<table class = "toptable3" cellpadding=3rem>
+					<th id = "top3name" colspan="2"><h4><strong style='color:Navy; text-decoration:underline'>Third Highest Project</strong></h4></th>
+					<tr><td id = "companydetailcell2">Amount</td><td id = "topval3">&nbsp;</td></tr>
+					<tr><td id = "companydetailcell2">Agency</td><td id = "topagency3">&nbsp;</td></tr>
+					<tr><td id = "companydetailcell2">Awarded To</td><td id = "awardedto3">&nbsp;</td></tr>
+					<!-- <tr><td id = "companydetailcell2">Awarded Date</td><td id = "awarded3">&nbsp;</td></tr> -->
+					<tr><td id = "companydetailcell2">Category</td><td id = "pcat3">&nbsp;</td></tr>
+					<!-- <tr><td id = "companydetailcell2">Procurement Method</td><td id = "pmethod3">&nbsp;</td></tr>
+					<tr><td id = "companydetailcell2">Procurement Type</td><td id = "ptype3">&nbsp;</td></tr> -->
+					<tr><td id = "companydetailcell2">Project ID</td><td id = "id3">&nbsp;</td></tr>
+					<!-- <tr><td id = "companydetailcell2">Project Title</td><td id = "title3">&nbsp;</td></tr> -->
+				</table>
+			</div>
+			</div>
+		</div>
+		<div class="row" id = 'introw_1'>
+			<div class="col-6" style='background-color:white'>
+			<h4 style='color:Navy; text-decoration:underline'> TOP AGENCIES BY PROJECT COUNT </h4>
+			<ol>
+				<li id = 'a_count_1'></li>
+				<li id = 'a_count_2'></li>
+				<li id = 'a_count_3'></li>
+				<!-- <li id = 'a_count_4'></li>
+				<li id = 'a_count_5'></li> -->
+			</ol>
+			</div>
+		<div class="col-6"style='background-color:white'>
+			<h4 style='color:Navy; text-decoration:underline'> TOP AGENCIES BY PROJECT VALUE AWARDED </h4>
+			<ol>
+				<li id = 'a_val_1'></li>
+				<li id = 'a_val_2'></li>
+				<li id = 'a_val_3'></li>
+				<!-- <li id = 'a_val_4'></li>
+				<li id = 'a_val_5'></li> -->
+			</ol>
+		</div>
+	</div>
+	<div class="row" id = 'introw_1' style='background-color:white'>
+		<div class="col-6">
+			<h4 style='color:Navy; text-decoration:underline'> TOP COMPANIES BY PROJECTS AWARDED </h4>
+			<ol>
+				<li id = 'c_count_1'></li>
+				<li id = 'c_count_2'></li>
+				<li id = 'c_count_3'></li>
+				<!-- <li id = 'c_count_4'></li>
+				<li id = 'c_count_5'></li> -->
+			</ol>
+		</div>
+		<div class="col-6">
+			<h4 style='color:Navy; text-decoration:underline'> TOP COMPANIES BY VALUE WON </h4>
+			<ol>
+				<li id = 'c_val_1'></li>
+				<li id = 'c_val_2'></li>
+				<li id = 'c_val_3'></li>
+				<!-- <li id = 'c_val_4'></li>
+				<li id = 'c_val_5'></li> -->
+			</ol>
+		</div>
+	</div>
+
+</body>
+</html>

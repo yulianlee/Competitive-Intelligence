@@ -1,0 +1,1 @@
+"{\"title\": \"GREEN HOUSE DESIGN & COMMUNICATIONS PTE. LTD.\", \"bidRange\": [6217.5, 39502.5], \"winRate\": [14, 2, 0.14], \"totalSum\": [478275.5, 63120.0], \"fg\": \"S2\"}"

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="index.js"></script>
+	<script src="thirdparty/jquery.min.js"></script>
+	<script src="thirdparty/pace.min.js"></script>
+	<link rel= "stylesheet" href = "pace-master\themes\orange\pace-theme-loading-bar.css">
+	<meta charset="utf-8">
+	<title>Competitive Analysis Tool</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="external-css.css">
+	<script src="https://use.fontawesome.com/2327f1ec26.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="">
+	<script src="index.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand nav-link" href="index.html">
+				<img src="steng.png" width="180rem" height="40rem" alt="">
+			</a>
+			<div class = "container">
+<!-- 				<div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href= "index.html"> Title Search </a>
+					</li>
+				</div> -->
+				<div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="Companies.html"> Company Search </a>
+					</li>
+				</div>
+				<div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="Agencies.html"> Agency Search </a>
+					</li>
+				</div>
+        <div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="SQLSearch.html"> Database Search </a>
+					</li>
+				</div>
+        <div class="p-1">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="bulktenders.html"> Bulk Tender Search </a>
+					</li>
+				</div>
+				</div>
+		</nav>
+	<div class= 'input-group' id = 'input-group-bulk'>
+	  Enter Bulk Tender ID<input type="text" list="bulk" id = "bulk" class="input-group-text ml-3 mr-2"/>
+	  <datalist id="bulk_tender">
+	  </datalist>
+
+  <br>
+	<span class="input-group-btn">
+	  <button type="button" class="btn btn-dark btn-lg" onclick="bulksearch()"><i class="fa fa-search"></i></button>
+	</span>
+	</div>
+	<hr>
+	<div class = 'row'>
+		<div class = 'col-6'>
+			<table class = "agencytable" cellpadding = 10rem>
+				<tr><td id = "agencydetailcell">Project ID:</td><td id = "id">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Title: </td><td id = "title">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Agency:</td><td id = "agency">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Published Date:</td><td id = "publisheddate">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Procurement Type:</td><td id = "procurementtype">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Quotation Type:</td><td id = "quotationtype">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Tender Closing Date:</td><td id = "tenderclosing">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Awarded Date:</td><td id = "awardeddate">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">No. Awarded:</td><td id = "no_awarded">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Procurement Category:</td><td id = "proc_cat">&nbsp;</td></tr>
+				<tr><td id = "agencydetailcell">Quotation Number:</td><td id = "qtn_num">&nbsp;</td></tr>
+				<!-- <tr><td id = "agencydetailcell">Awarded To:</td><td id = "awardedto">&nbsp;</td></tr> -->
+			</table>
+		</div>
+		<!-- <tr><td id = "agencydetailcell">Respondents:</td><td id = "respondents">&nbsp;</td></tr> -->
+		<div class = 'col-3' id = 'agencyresp'>
+			Awarded To:<ol id="awardedto"></ol>
+		</div>
+	</div>
+</body>
+</html>

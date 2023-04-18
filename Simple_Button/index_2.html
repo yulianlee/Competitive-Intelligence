@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="index.js"></script>
+	<script src="thirdparty/jquery.min.js"></script>
+	<script src="thirdparty/pace.min.js"></script>
+	<link rel= "stylesheet" href = "pace-master\themes\orange\pace-theme-loading-bar.css">
+	<meta charset="utf-8">
+	<title>Competitive Analysis Tool</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="external-css.css">
+	<script src="https://use.fontawesome.com/2327f1ec26.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="">
+	<script src="index.js"></script>
+	<style>
+	.navbar.navbar-inverse {
+		background-color: #3e968a;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg">
+		<a class="navbar-brand nav-link" href="intro.html">
+			<img src="steng.png" width="180rem" height="40rem" alt="">
+		</a>
+			<div class = "container">
+				<div class="p-2">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href= "index.html"> Title Search </a>
+					</li>
+				</div>
+				<div class="p-2">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="Companies.html"> Company Search </a>
+					</li>
+				</div>
+				<div class="p-2">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="Agencies.html"> Agency Search </a>
+					</li>
+				</div>
+				<div class="p-2">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="SQLSearch.html"> Database Search </a>
+					</li>
+				</div>
+				<div class="p-2">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a class = "nav-link" href="bulktenders.html"> Bulk Tender Search </a>
+					</li>
+				</div>
+				</div>
+		</nav>
+	<br>
+	<div class = "row">
+		<div class = "col-6">
+			<div id = "project_search">
+				<div class= 'input-group'>
+				Enter Project Title: <input id="title" class="input-group-text ml-3 mr-2"><span class="input-group-btn">
+				<button class="btn btn-dark btn-lg" type="button" onclick="setpredictedcompetitor()"><i class="fa fa-search"></i></button>
+			</span>
+		</div><hr noshade>
+					<tr><td><strong id = "tableheadwords" class="p-1 m-2">Description:</strong><td></tr><br>
+					<tr><td>Inputting a project title will output:</td></tr>
+					<tr><td><li>Estimated Project Value</li></tr></td>
+					<tr><td><li>Estimated Competitors</li></tr></td>
+					<tr><td><li>Upper and lower bounds for the project value estimate</li></tr></td>
+			</div><br>
+			<div id = "similar_projects">
+				<p><h4><strong style = 'text-decoration:underline'>Similar Projects are:</h4></strong></p>
+				<table cellpadding=30rem>
+				<tr><td><li><span id="similar_1" onclick = getprojectdetails(this) class = "btn btn-link"></span></li></tr></td>
+
+				<tr><td><li><span id="similar_2" onclick = getprojectdetails(this) class = "btn btn-link"></span></li></tr></td>
+
+				<tr><td><li><span id="similar_3" onclick = getprojectdetails(this) class = "btn btn-link"></span></li></tr></td>
+			</table>
+			</div>
+		</div>
+
+		<div class = "col-6">
+			<div id = "title_details">
+				<table>
+					<tr><h3><strong style = 'text-decoration:underline'>Estimated Project Value: </h3></strong><h4><strong><span id="value">&nbsp;</span></strong></h4></td></tr>
+					<tr>&nbsp;</tr>
+					<tr><td><h4><strong style = 'color:red'>Upper Limit:</strong></h4> <strong><h4><span id = "upper_lim">&nbsp;</span></h4></strong></td></tr>
+					<tr><td><h4><strong style = 'color:red'>Lower Limit:</strong></h4><strong> <h4><span id = "lower_lim">&nbsp;</span></strong></h4></td></tr>
+				</table>
+				<br>
+				<h4><strong style = 'text-decoration:underline'>Predicted Competitors are:</h4></strong> <ol id="competing_companies"></ol>
+			</div>
+		</div>
+	</div>
+		<div class = "row">
+			<div class = "col">
+
+			</div>
+		</div>
+</div>
+</body>
+</html>

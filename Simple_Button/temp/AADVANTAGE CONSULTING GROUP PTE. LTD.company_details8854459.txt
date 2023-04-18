@@ -1,0 +1,1 @@
+"{\"title\": \"AADVANTAGE CONSULTING GROUP PTE. LTD.\", \"bidRange\": [0, 108462.52], \"winRate\": [24, 9, 0.38], \"totalSum\": [1006080.58, 651377.5], \"fg\": \"S3\"}"
