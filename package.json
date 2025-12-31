@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/leeyinghern/comp_intel#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.22.1",
     "jquery": "^3.4.1"
   },
   "scripts":{
